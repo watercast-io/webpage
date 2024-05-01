@@ -16,8 +16,9 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "@/components": ["./components"],
+      "@/util": ["./lib/utils"],
       "@/*": ["./*"],
-      "contentlayer/generated": ["./.contentlayer/generated"]
     },
     "plugins": [
       {
@@ -31,7 +32,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".contentlayer/generated"
   ],
   "exclude": ["node_modules"]
 }

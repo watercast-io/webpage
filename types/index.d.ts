@@ -1,16 +1,28 @@
-import { User } from "@prisma/client"
-import type { Icon } from "lucide-react"
+import { Session } from '@/lib/auth/interfaces'
+import { User } from '@workos-inc/node'
 
-import { Icons } from "@/components/icons"
+export * from './shared'
 
-export type NavItem = {
-  title: string
-  href: string
-  disabled?: boolean
+export type SiteConfig = {
+  name: string
+  description: string
+  url: string
+  ogImage: string
+  links: {
+    twitter: string
+    github: string
+  }
 }
 
-export type MainNavItem = NavItem
+export type DashboardConfig = {
+  mainNav: MainNavItem[]
+  sidebarNav: SidebarNavItem[]
+}
 
+export type MarketingConfig = {
+  mainNav: MainNavItem[]
+}
+  
 export type SidebarNavItem = {
   title: string
   disabled?: boolean
@@ -27,39 +39,18 @@ export type SidebarNavItem = {
     }
 )
 
-export type SiteConfig = {
-  name: string
-  description: string
-  url: string
-  ogImage: string
-  links: {
-    twitter: string
-    github: string
-  }
+export type NavItem = {
+  title: string
+  href: string
+  disabled?: boolean
 }
 
-export type DocsConfig = {
-  mainNav: MainNavItem[]
-  sidebarNav: SidebarNavItem[]
+export type MainNavItem = NavItem
+
+export interface ContextProviderProp {
+  children?: ReactNode,
 }
 
-export type MarketingConfig = {
-  mainNav: MainNavItem[]
-}
-
-export type DashboardConfig = {
-  mainNav: MainNavItem[]
-  sidebarNav: SidebarNavItem[]
-}
-
-export type SubscriptionPlan = {
-  name: string
-  description: string
-  stripePriceId: string
-}
-
-export type UserSubscriptionPlan = SubscriptionPlan &
-  Pick<User, "stripeCustomerId" | "stripeSubscriptionId"> & {
-    stripeCurrentPeriodEnd: number
-    isPro: boolean
-  }
+export type AuthkitContextType = {
+  session: Session | undefined;
+};

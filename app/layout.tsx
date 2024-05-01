@@ -1,13 +1,11 @@
+import "@/styles/globals.css";
 import { Inter as FontSans } from "next/font/google"
 import localFont from "next/font/local"
 
-import "@/styles/globals.css"
-import { siteConfig } from "@/config/site"
-import { absoluteUrl, cn } from "@/lib/utils"
-import { Toaster } from "@/components/ui/toaster"
-import { Analytics } from "@/components/analytics"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import { siteConfig } from "config/site";
+import { cn } from "@/lib/utils";
+import { AuthkitProvider } from "@/contexts/AuthkitProvider/authkit-provider";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -20,6 +18,7 @@ const fontHeading = localFont({
   variable: "--font-heading",
 })
 
+
 interface RootLayoutProps {
   children: React.ReactNode
 }
@@ -31,26 +30,26 @@ export const metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "Next.js",
-    "React",
-    "Tailwind CSS",
-    "Server Components",
-    "Radix UI",
+    "watercast",
+    "barcelona",
+    "water resilience",
+    "sutainability",
+    "sustainable solutions",
   ],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "watercast",
+      url: "https://www.watercast.io",
     },
   ],
-  creator: "shadcn",
+  creator: "watercast",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "es_ES",
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
@@ -61,20 +60,18 @@ export const metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [`${siteConfig.url}/og.jpg`],
-    creator: "@shadcn",
+    creator: "@watercast",
   },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-  manifest: `${siteConfig.url}/site.webmanifest`,
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -82,12 +79,17 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontHeading.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
-          <Analytics />
-          <Toaster />
-          <TailwindIndicator />
-        </ThemeProvider>
+        <AuthkitProvider session={undefined}>
+          <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              {children}
+          </ThemeProvider>
+        </AuthkitProvider>
+          
       </body>
     </html>
   )
