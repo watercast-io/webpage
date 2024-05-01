@@ -20,15 +20,15 @@ import {
   SunMedium,
   Trash,
   Twitter,
+  Chrome,
   User,
   X,
-  Chrome,
   Mail,
   Shell,
-  type Icon as LucideIcon,
+  type XIcon as LucideIcon,
 } from "lucide-react"
 
-export type Icon = LucideIcon
+export type Icon = typeof LucideIcon
 export * from "./fenix";
 export const Icons = {
   logo: Shell,
