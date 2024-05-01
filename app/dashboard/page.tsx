@@ -2,7 +2,7 @@ import { ApplicationCard } from '@/components/application/application-card';
 import { Separator } from '@/components/ui/separator';
 import React from 'react';
 
-export const ListPage: React.FC = () => {
+export default async function ListPage() {
     return (
         <div>
             <h3>Application List</h3>
@@ -13,5 +13,3 @@ export const ListPage: React.FC = () => {
         </div>
     );
 }
-
-export default ListPage;

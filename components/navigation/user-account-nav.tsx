@@ -13,7 +13,7 @@ import { UserAvatar } from "./user-avatar"
 import { useRouter } from "next/navigation"
 
 export interface UserAccountNavProps {
-  signOutUser: () => void
+  signOutUser: () => Promise<void>
 }
 
 export const UserAccountNav: React.FC<UserAccountNavProps> = ({ signOutUser }) => {
@@ -24,7 +24,7 @@ export const UserAccountNav: React.FC<UserAccountNavProps> = ({ signOutUser }) =
       <DropdownMenuTrigger>
         <UserAvatar
           user={{ name: "Sergio" || null, image: null || null }}
-          className="h-8 w-8"
+          className="size-8"
         />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">

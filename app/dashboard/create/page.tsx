@@ -1,7 +1,7 @@
 import { CreateApplicationForm } from '@/components/application/create-form';
 import React from 'react';
 
-export const CreatePage: React.FC = () => {
+export default async function CreatePage() {
     return (
         <div>
             <h1>Create Application</h1>
@@ -11,7 +11,5 @@ export const CreatePage: React.FC = () => {
         </div>
     );
 }
-
-export default CreatePage;
 
 
