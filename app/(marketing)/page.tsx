@@ -1,9 +1,8 @@
 import { buttonVariants } from "@/components/ui/button";
-import posthog from "posthog-js"
 import { cn } from "@/util";
 import Link from "next/link"
 
-export default async function IndexPage() {
+export default function IndexPage() {
   return (
     <div className="flex flex-wrap">
     {/* Primera columna */}
@@ -18,7 +17,6 @@ export default async function IndexPage() {
           </p>
           <div className="space-x-4">
             <Link 
-              onClick={() => posthog.capture('Click contactar')}
               href="mailto:sergio.cardenas@watercast.io?subject=Contacto&cc=lorenzo.danese@watercast.io" className={cn(buttonVariants({ size: "lg" }))}>
               Contactar
             </Link>
