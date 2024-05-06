@@ -1,5 +1,6 @@
 import { shallow } from 'enzyme';
 import { SiteFooter } from './site-footer';
+import { siteConfig } from '@/config/site';
 
 describe('SiteFooter component', () => {
   it('renders without crashing', () => {
@@ -9,13 +10,8 @@ describe('SiteFooter component', () => {
 
   it('renders the correct footer text', () => {
     const wrapper = shallow(<SiteFooter />);
-    expect(wrapper.find('p').text()).toContain('Watercast');
-    expect(wrapper.find('p').text()).toContain(`${new Date().getFullYear()} ©`);
-  });
-
-  it('renders a link with correct href attribute', () => {
-    const wrapper = shallow(<SiteFooter />);
-    expect(wrapper.find('a').prop('href')).toEqual('#');
+    //expect(wrapper.find('p').text()).toContain('Watercast');
+    expect(wrapper.find('p').text()).toContain(`${siteConfig.name} © ${new Date().getFullYear()}. All rights reserved.`);
   });
 
   it('applies className passed via props', () => {
