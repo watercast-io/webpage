@@ -2,10 +2,10 @@ import "@/styles/globals.css";
 import { Inter as FontSans } from "next/font/google"
 import localFont from "next/font/local"
 
-import { ThemeProvider } from "@/components/providers/theme-provider";
+
 import { siteConfig } from "config/site";
 import { cn } from "@/lib/utils";
-import { AuthkitProvider } from "@/contexts/AuthkitProvider/authkit-provider";
+import AppProviders from "@/contexts/Providers";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -79,17 +79,9 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           fontHeading.variable
         )}
       >
-        <AuthkitProvider session={undefined}>
-          <ThemeProvider
-              attribute="class"
-              defaultTheme="system"
-              enableSystem
-              disableTransitionOnChange
-            >
-              {children}
-          </ThemeProvider>
-        </AuthkitProvider>
-          
+          <AppProviders>
+            {children}
+          </AppProviders>
       </body>
     </html>
   )

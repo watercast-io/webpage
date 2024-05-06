@@ -1,4 +1,9 @@
-import { User } from '@workos-inc/node';
+
+
+export type User = {
+  username: string;
+  email: string;
+};
 
 export interface Session {
   accessToken: string;
