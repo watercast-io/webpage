@@ -27,7 +27,7 @@ export const MainSection = ({ contact_url = '#', link_url = '#' }: IndexProps) =
               </Link>
               <Link 
                 href={link_url} className={cn(buttonVariants({ size: "lg", variant: "ghost" }))}>
-                Responde nuestra encuesta!
+                ¡Responde nuestra encuesta!
               </Link>
             </div>
           </div>
