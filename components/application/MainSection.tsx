@@ -23,7 +23,7 @@ export const MainSection = ({ contact_url = '#', link_url = '#' }: IndexProps) =
             <div className="space-x-4">
               <Link 
                 href={contact_url} className={cn(buttonVariants({ size: "lg" }))}>
-                Contactar
+                Contacta con nosotros
               </Link>
               <Link 
                 href={link_url} className={cn(buttonVariants({ size: "lg", variant: "ghost" }))}>
