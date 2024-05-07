@@ -9,6 +9,7 @@ export const env = createEnv({
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
     JWT_SECRET_KEY: z.string(),
+    CALENDLY_URL: z.string(),
   },
 
   /**
@@ -31,6 +32,7 @@ export const env = createEnv({
     NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_POSTHOG_HOST,
     NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
     JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
+    CALENDLY_URL: process.env.CALENDLY_URL,
     
   },
   /**

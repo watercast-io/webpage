@@ -18,6 +18,7 @@ const config: Config = {
     '^@/(.*)$':  '<rootDir>/$1'
   },
   setupFilesAfterEnv: ['<rootDir>/enzyme.setup.js'],
+  testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
 }
  
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
