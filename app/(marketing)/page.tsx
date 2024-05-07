@@ -4,10 +4,10 @@ import Link from "next/link"
 
 export default function IndexPage() {
   return (
-    <div className="flex flex-wrap">
+    <div className="flex md:flex-wrap flex-wrap-reverse">
     {/* Primera columna */}
     <div className="w-full md:w-3/5">
-      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+      <section className="space-y-6 pb-8 sm:pt-6 md:pb-12 md:pt-10 lg:py-32">
         <div className="container flex max-w-5xl flex-col items-center gap-4 text-center">
           <h1 className="font-heading text-3xl sm:text-5xl md:text-5xl lg:text-6xl ">
             Te ayudamos a gestionar tu estrategia de agua
@@ -27,8 +27,8 @@ export default function IndexPage() {
     
     {/* Segunda columna */}
     <div className="w-full md:w-2/5">
-      <div className="flex justify-center items-center h-full md:py-30">
-        <img src="images/background/recycle_drop_color.svg" alt="Descripción de la imagen" className="max-w-sm md:max-w-lg" />
+      <div className="flex justify-center items-center h-full py-5 md:py-30">
+        <img src="images/background/water_cycle_colored_boxed.svg" alt="water cycle image" className="max-w-sm md:max-w-lg w-3/5 md:w-auto" />
       </div>
     </div>
   </div>
