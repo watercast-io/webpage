@@ -11,7 +11,7 @@ describe('SiteFooter component', () => {
   it('renders the correct footer text', () => {
     const wrapper = shallow(<SiteFooter />);
     //expect(wrapper.find('p').text()).toContain('Watercast');
-    expect(wrapper.find('p').text()).toContain(`${siteConfig.name} © ${new Date().getFullYear()}. All rights reserved.`);
+    expect(wrapper.find('p').text()).toContain(`${siteConfig.name} © ${new Date().getFullYear()}. Todos los derechos reservados.`);
   });
 
   it('applies className passed via props', () => {
