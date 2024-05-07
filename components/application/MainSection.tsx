@@ -5,9 +5,10 @@ import Link from "next/link"
 
 type IndexProps = {
     contact_url?: string
+    link_url?: string
 }
   
-export const MainSection = ({ contact_url = '#' }: IndexProps) => (
+export const MainSection = ({ contact_url = '#', link_url = '#' }: IndexProps) => (
     <div className="flex md:flex-wrap flex-wrap-reverse">
       {/* Primera columna */}
       <div className="w-full md:w-3/5">
@@ -23,6 +24,10 @@ export const MainSection = ({ contact_url = '#' }: IndexProps) => (
               <Link 
                 href={contact_url} className={cn(buttonVariants({ size: "lg" }))}>
                 Contactar
+              </Link>
+              <Link 
+                href={link_url} className={cn(buttonVariants({ size: "lg", variant: "ghost" }))}>
+                Responde nuestra encuesta!
               </Link>
             </div>
           </div>
