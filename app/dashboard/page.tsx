@@ -1,13 +1,10 @@
-import { Separator } from '@/components/ui/separator';
-import React from 'react';
+import React from "react";
+import DashboardList from "@/components/application/DashboardList";
 
 export default async function ListPage() {
     return (
         <div>
-            <h3>Application List</h3>
-            <Separator className="my-4" />
-            <div className='flex flex-row gap-4'>
-            </div>
+            <DashboardList />
         </div>
     );
 }
