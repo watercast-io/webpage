@@ -4,49 +4,67 @@
 
 
 @layer base {
+  :root {
+    
+      /* Name: custom color palette
+         Author: Ilias Ism
+         URL: https://gradient.page */
   
-:root  {
-  --background: 0 0% 100%;
-  --foreground: 209 5% 10%;
-  --card: 209 50% 90%;
-  --card-foreground: 209 5% 15%;
-  --popover: 209 100% 95%;
-  --popover-foreground: 209 100% 10%;
-  --primary: 209 100% 84.5%;
-  --primary-foreground: 0 0% 0%;
-  --secondary: 209 30% 70%;
-  --secondary-foreground: 0 0% 0%;
-  --muted: 171 30% 85%;
-  --muted-foreground: 209 5% 35%;
-  --accent: 171 30% 80%;
-  --accent-foreground: 209 5% 15%;
-  --destructive: 0 100% 30%;
-  --destructive-foreground: 209 5% 90%;
-  --border: 209 30% 50%;
-  --input: 209 30% 26%;
-  --ring: 209 100% 84.5%;
-  --radius: 0.75rem;
- }
-.dark {
-  --background: 209 50% 10%;
-  --foreground: 209 5% 90%;
-  --card: 209 50% 10%;
-  --card-foreground: 209 5% 90%;
-  --popover: 209 50% 5%;
-  --popover-foreground: 209 5% 90%;
-  --primary: 209 100% 84.5%;
-  --primary-foreground: 0 0% 0%;
-  --secondary: 209 30% 20%;
-  --secondary-foreground: 0 0% 100%;
-  --muted: 171 30% 25%;
-  --muted-foreground: 209 5% 60%;
-  --accent: 171 30% 25%;
-  --accent-foreground: 209 5% 90%;
-  --destructive: 0 100% 30%;
-  --destructive-foreground: 209 5% 90%;
-  --border: 209 30% 26%;
-  --input: 209 30% 26%;
-  --ring: 209 100% 84.5%;
-  --radius: 0.75rem;
- }
+      /* CSS: .bg-gradient { background: var(--gradient) } */
+      --gradient: #003153;
+    --background: 217 100% 98.32%;
+    --foreground: 217 10% 0.64%;
+
+    --muted: 217 10% 91.6%;
+    --muted-foreground: 217 5% 41.6%;
+
+    --popover: 217 10% 91.6%;
+    --popover-foreground: 217 10% 0.8%;
+
+    --card: 217 10% 91.6%;
+    --card-foreground: 217 10% 0.8%;
+
+    --border: 217 15% 89.64%;
+    --input: 217 15% 89.64%;
+
+    --primary: 217 100% 16%;
+    --primary-foreground: 217 2% 91.6%;
+
+    --secondary: 217 5% 95.8%;
+    --secondary-foreground: 217 7% 11.6%;
+
+    --accent: 217 5% 95.8%;
+    --accent-foreground: 217 7% 11.6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 217 100% 16%;
+
+    --radius: 0.5rem;
+  
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 78% 82%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
 }
+
