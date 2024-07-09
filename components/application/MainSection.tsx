@@ -15,10 +15,10 @@ export const MainSection = ({ contact_url = '#', link_url = '#' }: IndexProps) =
         <section className="space-y-6 pb-8 sm:pt-6 md:pb-12 md:pt-10 lg:py-32">
           <div className="container flex max-w-5xl flex-col items-center gap-4 text-center">
             <h1 className="font-heading text-3xl sm:text-5xl md:text-5xl lg:text-6xl ">
-              Te ayudamos a gestionar tu estrategia de agua
+              Optimiza el uso de agua en tu cadena de suministro
             </h1>
             <p className="max-w-2xl leading-normal sm:text-xl sm:leading-8">
-              Utilizamos inteligencia artificial para proporcionar una evaluación en tiempo real del riesgo hídrico y ofreciendo opciones de adaptación y mitigación
+            Ayudamos a las empresas a calcular el uso de agua en toda la cadena de suministro, simplificando la recopilación de datos y aclarando los requerimientos para los proveedores.
             </p>
             <div className="space-x-4">
               <Link 
