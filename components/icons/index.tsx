@@ -25,6 +25,7 @@ import {
   X,
   Mail,
   Shell,
+  Droplet,
   type XIcon as LucideIcon,
 } from "lucide-react"
 
@@ -54,6 +55,7 @@ export const Icons = {
   laptop: Laptop,
   chrome: Chrome,
   mail: Mail,
+  droplet: Droplet,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"

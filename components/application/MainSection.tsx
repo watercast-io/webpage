@@ -22,12 +22,12 @@ export const MainSection = ({ contact_url = '#', link_url = '#' }: IndexProps) =
             </p>
             <div className="space-x-4">
               <Link 
-                href={contact_url} className={cn(buttonVariants({ size: "lg" }))}>
-                Contacta con nosotros
+                href={'calculator'} className={cn(buttonVariants({ size: "lg" }))}>
+                Calcula tu huella hídrica
               </Link>
               <Link 
-                href={link_url} className={cn(buttonVariants({ size: "lg", variant: "ghost" }))}>
-                ¡Responde nuestra encuesta!
+                href={contact_url} className={cn(buttonVariants({ size: "lg", variant: "ghost" }))}>
+                Contacta con nosotros
               </Link>
             </div>
           </div>
