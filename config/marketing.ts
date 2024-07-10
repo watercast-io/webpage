@@ -4,11 +4,11 @@ import { type MarketingConfig } from "@/types";
 export const marketingConfig: MarketingConfig = {
   mainNav: [
     // {
-    //   title: "Pricing",
-    //   href: "/pricing",
+    //   title: "Calcula tu huella hídrica",
+    //   href: "/calculator",
     // },
     // {
-    //   title: "About us",
+    //   title: "Nosotros",
     //   href: "/about-us",
     // },
     // {

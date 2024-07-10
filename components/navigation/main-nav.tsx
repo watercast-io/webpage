@@ -9,7 +9,7 @@ import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 
 import { type MainNavItem } from "@/types"
-import WarikeIcon from "@/components/icons/fenix"
+
 import { Icons } from "@/components/icons"
 import { MobileNav } from "@/components/navigation/mobile-nav"
 
