@@ -25,13 +25,15 @@ import {
   X,
   Mail,
   Shell,
+  Droplet,
+  Droplets,
   type XIcon as LucideIcon,
 } from "lucide-react"
 
 export type Icon = typeof LucideIcon
 export * from "./fenix";
 export const Icons = {
-  logo: Shell,
+  logo: Droplets,
   close: X,
   spinner: Loader2,
   chevronLeft: ChevronLeft,
@@ -54,6 +56,7 @@ export const Icons = {
   laptop: Laptop,
   chrome: Chrome,
   mail: Mail,
+  droplet: Droplet,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"

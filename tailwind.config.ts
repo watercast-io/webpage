@@ -19,9 +19,6 @@ const config = {
       },
     },
     extend: {
-      backgroundImage: theme => ({
-        'background': "url('/images/water-industrial-1.jpeg')",
-      }),
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
