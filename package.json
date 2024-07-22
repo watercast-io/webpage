@@ -12,7 +12,7 @@
     "start:test:watch": "jest --watch --env=jsdom"
   },
   "dependencies": {
-    "@formatjs": "link:@formatjs",
+    "@formatjs/intl": "^2.10.4",
     "@hookform/resolvers": "^3.3.4",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
@@ -50,6 +50,7 @@
     "cmdk": "^1.0.0",
     "embla-carousel-react": "^8.0.0",
     "eslint-plugin-tailwindcss": "^3.15.1",
+    "i18nexus-cli": "^3.4.0",
     "input-otp": "^1.1.0",
     "iron-session": "^8.0.1",
     "jose": "^5.2.3",
@@ -70,8 +71,7 @@
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.0",
-    "zod": "^3.22.4",
-    "i18nexus-cli": "^3.4.0"
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@cfaester/enzyme-adapter-react-18": "^0.7.1",
