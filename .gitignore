@@ -40,3 +40,24 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# next-video
+media/*
+!media/*.json
+!media/*.js
+!media/*.ts
+public/_next-video
+
+# next-video
+public/media/*
+!public/media/*.json
+!public/media/*.js
+!public/media/*.ts
+public/_next-video
+
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video

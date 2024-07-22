@@ -11,6 +11,8 @@ export const env = createEnv({
     JWT_SECRET_KEY: z.string(),
     CALENDLY_URL: z.string(),
     LINK_URL: z.string(),
+    MUX_TOKEN_ID: z.string(),
+    MUX_TOKEN_SECRET: z.string(),
   },
 
   /**
@@ -35,6 +37,8 @@ export const env = createEnv({
     JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
     CALENDLY_URL: process.env.CALENDLY_URL,
     LINK_URL: process.env.LINK_URL,
+    MUX_TOKEN_ID: process.env.MUX_TOKEN_ID,
+    MUX_TOKEN_SECRET: process.env.MUX_TOKEN_SECRET,
     
   },
   /**
