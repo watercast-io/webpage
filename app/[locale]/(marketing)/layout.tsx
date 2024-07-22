@@ -8,6 +8,7 @@ import { Icons } from "@/components/icons"
 import { siteNamespaces, siteConfig } from "@/config/site"
 import ServerIntlProvider from "@/contexts/IntlProvider"
 import getIntl from "@/app/intl"
+import LanguageChanger from "@/components/navigation/language-changer"
 
 
 export interface MarketingLayoutProps {
@@ -32,14 +33,7 @@ export default async function MarketingLayout({
               <div className="flex flex-1 items-center space-x-4 sm:justify-end">
                 
                 <nav className="flex space-x-4">
-                  {/* <Link
-                    href={siteConfig.links.github}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icons.gitHub className="h-7 w-7" />
-                    <span className="sr-only">GitHub</span>
-                  </Link> */}
+                  <LanguageChanger />
                 </nav>
               </div>
             </div>
