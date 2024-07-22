@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "next build",
-    "start:dev": "next dev & npx next-video sync -w",
+    "build": "i18nexus pull && next build",
+    "start:dev": "i18nexus pull &&  next dev & npx next-video sync -w",
     "lint": "next lint",
-    "start": "next start",
+    "start": "i18nexus pull && next start",
     "start:test": "jest",
     "start:test:watch": "jest --watch --env=jsdom"
   },
