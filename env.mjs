@@ -13,6 +13,7 @@ export const env = createEnv({
     LINK_URL: z.string(),
     MUX_TOKEN_ID: z.string(),
     MUX_TOKEN_SECRET: z.string(),
+    I18NEXUS_API_KEY: z.string(),
   },
 
   /**
@@ -39,6 +40,7 @@ export const env = createEnv({
     LINK_URL: process.env.LINK_URL,
     MUX_TOKEN_ID: process.env.MUX_TOKEN_ID,
     MUX_TOKEN_SECRET: process.env.MUX_TOKEN_SECRET,
+    I18NEXUS_API_KEY: process.env.I18NEXUS_API_KEY,
     
   },
   /**
