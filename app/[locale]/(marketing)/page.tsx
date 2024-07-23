@@ -2,6 +2,7 @@ import { env } from "@/env.mjs"
 import { MainSection } from "@/components/application/MainSection"
 import ProductSection from "@/components/application/ProductSection";
 import MediaSection from "@/components/application/MediaSection";
+import FoundersSection from "@/components/application/FoundersSection";
 
 export default function IndexPage({ }) {
   const contact_url = env.CALENDLY_URL || '';
@@ -22,8 +23,8 @@ export default function IndexPage({ }) {
         <hr className="my-8" />
         
         <div className="flex-grow-[2]">
-        
           <ProductSection /> 
+          <FoundersSection /> 
         </div>
       </div>
 </div>

@@ -1,5 +1,3 @@
-import { siteConfig } from '@/config/site'
-import Link from 'next/link'
 import React from 'react'
 import Video from 'next-video';
 import watercastVideo from '@/videos/watercastVideo.mp4';
@@ -18,7 +16,6 @@ const MediaSection: React.FC<MediaSectionProps> = ({ }) => {
                 <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
                     <Video src={watercastVideo} />
                 </div>
-                
             </section>
         </React.Fragment>
     );
