@@ -29,28 +29,28 @@ export const ProductSection: React.FC<ProductSectionProps> = ({ }) => {
                         {title}
                     </h2>
                 </div>
-                <div className="flex gap-4 justify-center ">
-                    <div className="rounded-lg  p-2">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-2 justify-center ">
+                    <div className="rounded-lg p-2">
                         <div className="flex h-[100px] flex-col justify-between rounded-md items-center">
                             <TeslaIcon width={100} height={100} />
                         </div>
                     </div>
-                    <div className="rounded-lg  p-2">
+                    <div className="rounded-lg p-2">
                         <div className="flex h-[100px] flex-col justify-between rounded-md items-center">
                             <AmazonIcon width={100} height={100} />
                         </div>
                     </div>
-                    <div className="rounded-lg  p-2">
+                    <div className="rounded-lg p-2">
                         <div className="flex h-[100px] flex-col justify-between rounded-md items-center">
                             <EventbriteIcon width={100} height={100} />
                         </div>
                     </div>
-                    <div className="rounded-lg  p-2">
+                    <div className="rounded-lg p-2">
                         <div className="flex h-[100px] flex-col justify-between rounded-md items-center">
                             <AbbIcon width={100} height={100} />
                         </div>
                     </div>
-                    <div className="rounded-lg  p-2">
+                    <div className="rounded-lg p-2">
                         <div className="flex h-[100px] flex-col justify-between rounded-md items-center">
                             <ToucanIcon width={100} height={100} />
                         </div>

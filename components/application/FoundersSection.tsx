@@ -27,7 +27,7 @@ export const FoundersSection: React.FC<FoundersSectionProps> = ({ }) => {
                         {title}
                     </h2>
                 </div>
-                <div className="flex gap-4 justify-center ">
+                <div className="flex flex-col md:flex-row md:grid-cols-5  gap-4 justify-center">
                     <div className="rounded-lg  p-2">
                         <div className="flex h-[100px] flex-col justify-between rounded-md items-center">
                             <AgranimoIcon  width={200} height={100} />
