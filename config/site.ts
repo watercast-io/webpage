@@ -12,3 +12,7 @@ export const siteConfig: SiteConfig = {
       github: "https://github.com/watercast-io/",
     },
   }
+
+  export enum siteNamespaces {
+    Marketing = "marketing"
+  }

@@ -26,13 +26,14 @@ import {
   Mail,
   Shell,
   Droplet,
+  Droplets,
   type XIcon as LucideIcon,
 } from "lucide-react"
 
 export type Icon = typeof LucideIcon
 export * from "./fenix";
 export const Icons = {
-  logo: Shell,
+  logo: Droplets,
   close: X,
   spinner: Loader2,
   chevronLeft: ChevronLeft,
